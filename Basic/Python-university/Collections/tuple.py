@@ -1,3 +1,4 @@
+"""These are examples of actions that you can execute over tuples"""
 #similar to list but once initialized elements cannot be modified
 
 fruits = ("apple", "pear", "orange", "peach")
@@ -11,7 +12,7 @@ print(len(fruits))
 
 print(fruits[2])
 
-#navegacion inversa
+#inverse navigation
 print(fruits[-1])
 
 #working with range
@@ -24,7 +25,6 @@ print(fruits[1:3])
 #to change an item in a tuple we need to converit to a list
 fruitToList = list(fruits)
 fruitToList[0] = "berry"
-
 
 #then we can reconverted
 fruits = tuple(fruitToList)

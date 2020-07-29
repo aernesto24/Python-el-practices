@@ -1,3 +1,5 @@
+"""These are examples of actions that you can execute over Dictionaries"""
+
 #key value 
 dictionary = {
     "AWS": "Amazon Web Services",
@@ -10,45 +12,45 @@ print(dictionary)
 print(len(dictionary))
 print(type(dictionary))
 
-#no maneja indices, maneja llaves
+#Do not manage indexes, it uses keys
 
-#acceder a un elemento requiere especificar una llave
+#access an element requires to specify a key
 print(dictionary["GCP"])
 
-#otra forma es con el metodo get
+#using Get
 print( dictionary.get("AZP"))
 
-#En los disccionarios si podemos hacer cambios en los valores asociados a una llave
+#On dictionaries we can make changes to the key values
 #dictionary[str(input("Enter the key to update: "))] = str(input("Enter the correct value: "))
 dictionary["DO"] = "DigitalOcean"
 print(dictionary)
 
-#tambien podemos iterar
+#We can also iterate
 for word in dictionary:
     print(word)
     
-#Para regresar el valor asociado al key tambien
+#to obtain the key's value
 for word in dictionary:
     print(word + " : " + dictionary[word])
     
-#una forma de devolver los valores sin indicar las llaves
+#return values without indicating the keys
 for value in dictionary.values():
     print(value)
 
 print(str(input("Which element are you looking for: ")) in dictionary)
 
-#agregar elementos
+#Add element
 dictionary["RK"] = "RackSpace"
 print(dictionary)
 
-#remover elementos, debemos indicar cual es el termino que queremos remover
+#Remove Element
 dictionary.pop("AZP")
 print(dictionary)
 
-#limpiar completamente
+#Clean completely
 dictionary.clear()
 print(dictionary)
 
-#eliminar por completo nuestra variable
+#delete our variable
 del dictionary
 print(dictionary)

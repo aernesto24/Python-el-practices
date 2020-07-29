@@ -1,3 +1,4 @@
+"""These are examples of actions that you can execute over lists"""
 names = ["Juan", "Carla", "Diana", "Marcelo"]
 
 print(names)
@@ -7,13 +8,13 @@ for i in names:
     print(names[index])
     index += 1
     
-#conocer el largo de la lista
+#length of the list
 print(len(names))
 
-#Acceder al elemento 0
+#Access 0 element
 print(names[0])
 
-#Navegacion inversa - ultimo elemento
+#Access last elemtn
 print(names[-1])
 
 index = -1
@@ -21,23 +22,23 @@ for i in names:
     print(names[index])
     index -= 1
     
-#Recuperar un rango de nuestra lista
-print(names[0:2]) #Sin incluir el indice 2 ya que recupera 2-1
+#Return a range from the list
+print(names[0:2]) #this do not include index 2 as is interpreted as 2-1
 
-#Imprimir los elementos de inicio hasta el indice proporcionado
-print(names[:3]) #Sin incluir el indice 3
+#print elements from the beginning to the index Commented
+print(names[:3]) #Do not include index 3
 
-#Imprime los elementos de la lista que sean indice par
+#Print pairs from the list
 index = 0
 for i in names:
     if index % 2 == 0 and index !=0:
         print(names[index])
     index += 1
     
-#Imprimer los elementos hasta el final del indice proporcionado
+#primt elements from the index to the end
 print(names[2:])
 
-#cambiar los elementos de una lista
+#Change elements from a list
 names[1] = "Ivone"
 print(names[1])
 
